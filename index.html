@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f9d8e6">
+  <meta name="description" content="A little magical birthday surprise for My Chotu.">
+  <title>My Chotu 💖</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <div id="particle-layer" aria-hidden="true"></div>
+  <main class="app-shell">
+    <div class="top-note"><span class="tiny-heart">♥</span> a little world made just for you <span class="tiny-heart">♥</span></div>
+
+    <section class="scene active" id="scene-1" aria-labelledby="book-title">
+      <div class="eyebrow">✦ a tiny bit of magic ✦</div>
+      <h1 class="hero-title" id="book-title">A story called <em>us</em></h1>
+      <p class="subtitle">Some pages are too special to read all at once…</p>
+      <button class="book-wrap interactive" id="open-book" aria-label="Open My Chotu love book">
+        <span class="book-glow"></span>
+        <span class="book">
+          <span class="book-spine"></span>
+          <span class="book-stamp">♡</span>
+          <span class="book-title">My Chotu</span>
+          <span class="book-subtitle">our little forever</span>
+          <span class="book-bottom">OPEN ME ✨</span>
+          <span class="book-page"></span>
+        </span>
+        <span class="float-emoji book-e1">✨</span><span class="float-emoji book-e2">🥺</span>
+        <span class="float-emoji book-e3">💖</span><span class="float-emoji book-e4">💫</span>
+      </button>
+      <p class="hint">tap the book to begin</p>
+    </section>
+
+    <section class="scene" id="scene-2" aria-labelledby="birthday-title">
+      <div class="eyebrow">✦ today is extra special ✦</div>
+      <h1 class="hero-title" id="birthday-title">Make a little wish 🎂</h1>
+      <p class="subtitle">Close your eyes, Chotu. The universe is listening.</p>
+      <div class="cake-stage">
+        <div class="cake-sparkle s1">✦</div><div class="cake-sparkle s2">✧</div>
+        <div class="candle"><span class="flame" id="candle-flame"></span><span class="wick"></span></div>
+        <div class="cake-top"><span class="icing-drip"></span><span class="berry">♥</span><span class="berry b2">♥</span></div>
+        <div class="cake-layer cake-layer-top"></div><div class="cake-layer cake-layer-bottom"></div>
+        <div class="cake-plate"></div>
+        <span class="smoke hidden" id="smoke">💨 ✨</span>
+      </div>
+      <p class="micro-copy" id="wish-copy">One tiny breath. One very big wish. 💗</p>
+      <button class="button button-primary pulse" id="blow-button">Blow 🎂💨</button>
+      <img src="my_gif.gif" class="ambient-gif" alt="" aria-hidden="true">
+    </section>
+
+    <section class="scene" id="scene-3" aria-labelledby="bite-title">
+      <div class="eyebrow">✦ just one little bite ✦</div>
+      <h1 class="hero-title" id="bite-title">Share the sweetness</h1>
+      <p class="subtitle" id="bite-subtitle">Tap the cake… I saved you the best piece.</p>
+      <button class="cake-bite interactive" id="bite-cake" aria-label="Take a bite of the cake">
+        <span class="bite-sparkle">✧</span><span class="bite-candle">🕯️</span>
+        <span class="bite-icing">♡ ♡ ♡</span><span class="bite-body">🍰</span>
+        <span class="bite-plate">━━━━━━━━</span>
+      </button>
+      <div class="bite-progress"><span id="bite-dot-1" class="dot active-dot"></span><span id="bite-dot-2" class="dot"></span></div>
+      <p class="hint">a little sweetness, one tap at a time</p>
+    </section>
+
+    <section class="scene" id="scene-4" aria-labelledby="ring-title">
+      <div class="eyebrow">✦ a gift from my heart ✦</div>
+      <h1 class="hero-title" id="ring-title">Something just for you</h1>
+      <p class="subtitle" id="gift-instruction">There’s a little sparkle waiting inside…</p>
+      <button class="gift-button interactive" id="open-gift" aria-label="Open the gift box">
+        <span class="gift-sheen"></span><span class="gift-emoji" id="gift-emoji">🎁</span><span class="gift-caption">for my Chotu</span>
+      </button>
+      <div class="ring-reveal hidden" id="ring-reveal">
+        <div class="ring-aura"></div><div class="ring-emoji">💍</div><div class="ring-stars">✧ ✦ ✧</div>
+      </div>
+      <div class="audio-pulse hidden" id="audio-pulse" aria-label="Romantic audio playing">
+        <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+      </div>
+      <div class="proposal-actions hidden" id="proposal-actions">
+        <p class="proposal-question">Will you keep choosing us? 💗</p>
+        <div class="button-row"><button class="button button-primary" id="yes-button">Yes 💖🥰</button><button class="button button-no" id="no-button">No 😠❌</button></div>
+      </div>
+    </section>
+
+   <section class="scene" id="scene-5" aria-labelledby="letter-heading">
+      <div class="eyebrow">✦ from my heart to yours ✦</div>
+      <h1 class="hero-title" id="letter-heading">A little letter</h1>
+      <div class="letter-card">
+        <div class="letter-flower">✿</div>
+        <p class="letter-dear">My dearest Chotu,</p>
+        <p id="typed-letter" class="typed-letter"></p><span class="type-cursor" id="type-cursor">|</span>
+        <p class="letter-signoff hidden" id="letter-signoff">From ishuu 💗</p>
+      </div>
+      <button class="button button-primary hidden bounce-in" id="go-button">Go 💌✨</button>
+    </section>
+```
+    <section class="scene" id="scene-6" aria-labelledby="crossroads-title">
+      <div class="eyebrow">✦ choose your little adventure ✦</div>
+      <h1 class="hero-title" id="crossroads-title">One more secret?</h1>
+      <p class="subtitle">There are two doors in this tiny universe… which one calls you?</p>
+      <div class="choice-grid">
+        <button class="choice-card" id="secret-choice"><span class="choice-icon">🔒</span><span class="choice-title">Secret 🤫🔒</span><span class="choice-desc">something only your heart should know</span><span class="choice-arrow">↗</span></button>
+        <button class="choice-card" id="photos-choice"><span class="choice-icon">💬</span><span class="choice-title">Want to say you 🥺💬</span><span class="choice-desc">little memories, little reasons</span><span class="choice-arrow">↗</span></button>
+      </div>
+    </section>
+
+    <section class="scene" id="scene-7-secret" aria-labelledby="secret-title">
+      <div class="eyebrow">✦ unlocked with love ✦</div>
+      <h1 class="hero-title" id="secret-title">Our little secret</h1>
+      <button class="envelope interactive" id="open-envelope" aria-label="Open the secret letter"><span class="envelope-heart">💌</span><span class="envelope-label">tap to open</span></button>
+      <div class="secret-message hidden" id="secret-message">
+        <div class="secret-glow">♡</div>
+        <p class="secret-kicker">a secret from me to you</p>
+        <p class="secret-copy">Meri jaan, ❤️🥹
+
+Maine tumhe ek baat nahi batayi… Jis din hum mile, usse ek hafte pehle se main bas yahi soch raha tha ki kaash Bhagwan meri life mein bhi koi bhej de, jisse main pyaar kar sakun. 🥹❤️
+
+Aur phir tu mil gayi, kasam se aisa laga jaise Bhagwan ne meri sun li. Mujhe nahi pata tha ki jiske aane ki main wish kar raha tha, woh tu hogi. 🫶🏻💗
+
+**Tu sach mein meri ek khoobsurat dua ka jawab hai, meri jaan.** ❤️🧿 💖</p>
+        <div class="secret-sign">you are my favourite chapter ✨</div>
+      </div>
+      <button class="button button-quiet back-to-choices">← back to choices</button>
+    </section>
+
+    <section class="scene" id="scene-7-photos" aria-labelledby="photos-title">
+      <div class="eyebrow">✦ little moments, big feelings ✦</div>
+      <h1 class="hero-title" id="photos-title">Tere liye...</h1>
+      <p class="subtitle">Tap a photo to hear a little message from me.</p>
+      <div class="polaroid-grid">
+        <button class="polaroid" data-photo="1"><img src="img1.jpg" alt="Memory one"><span class="photo-caption">my favourite smile 💗</span><span class="photo-number">01</span></button>
+        <button class="polaroid" data-photo="2"><img src="img2.jpg" alt="Memory two"><span class="photo-caption">our kind of magic ✨</span><span class="photo-number">02</span></button>
+        <button class="polaroid" data-photo="3"><img src="img3.jpg" alt="Memory three"><span class="photo-caption">a little piece of home 🏡</span><span class="photo-number">03</span></button>
+        <button class="polaroid" data-photo="4"><img src="img4.jpg" alt="Memory four"><span class="photo-caption">you, always 🥺</span><span class="photo-number">04</span></button>
+      </div>
+      <p class="voice-status" id="voice-status" aria-live="polite">Choose a memory to play its voice note ♡</p>
+      <button class="button button-quiet back-to-choices">← back to choices</button>
+    </section>
+
+    <footer class="footer-note">made with a little magic & a lot of love <span>♡</span></footer>
+  </main>
+
+  <audio id="background-music" src="bg_music.MP3" loop preload="auto"></audio>
+  <audio id="ring-audio" src="ring_audio.MP3" preload="auto"></audio>
+  <audio id="letter-audio" src="letter_audio.mp3" preload="auto"></audio>
+  <audio id="bite-audio" src="bite.mp3" preload="auto"></audio>
+  <audio class="voice-audio" data-voice="1" src="voice1.MP3" preload="none"></audio>
+  <audio class="voice-audio" data-voice="2" src="voice2.MP3" preload="none"></audio>
+  <audio class="voice-audio" data-voice="3" src="voice3.MP3" preload="none"></audio>
+  <audio class="voice-audio" data-voice="4" src="voice4.MP3" preload="none"></audio>
+  <script src="script.js"></script>
+</body>
+</html>
